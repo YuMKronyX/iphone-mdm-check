@@ -22,8 +22,9 @@ Outil graphique Python pour diagnostiquer les problèmes de connexion entre un i
 
 Sur Zorin OS ou Ubuntu, ouvre un terminal et exécute :
 
-sudo apt update
+```sudo apt update
 sudo apt install python3 python3-tk usbutils libimobiledevice-utils
+```
 
 🚀 Lancement
 
