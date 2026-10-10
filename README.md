@@ -21,7 +21,7 @@ sudo apt install python3-tk libimobiledevice-utils ifuse
 
 🚀 Lancement
 
-python3 iphone_mdm_check.py
+```python3 iphone_mdm_check.py```
 
 ⚠️ À propos du MDM
 
