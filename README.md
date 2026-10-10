@@ -30,7 +30,7 @@ sudo apt install python3 python3-tk usbutils libimobiledevice-utils
 
 Dans le dossier du projet :
 
-python3 iphone_mdm_check.py
+```python3 iphone_mdm_check.py```
 
 Déverrouille l’iPhone et connecte-le avec un câble USB compatible avec le transfert de données. Si l’appareil le demande, accepte l’autorisation « Faire confiance ».
 
