@@ -15,8 +15,9 @@ iPhone MDM Check est un outil open source conçu pour diagnostiquer la connexion
 
 💻 Installation sur Zorin OS / Ubuntu
 
-sudo apt update
+´´´sudo apt update
 sudo apt install python3-tk libimobiledevice-utils ifuse
+´´´
 
 🚀 Lancement
 
