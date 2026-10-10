@@ -1,40 +1,51 @@
-# iphone-mdm-check 
-📱 iPhone MDM Check
+📱 iPhone MDM Check — V2
 
-Diagnostic iPhone depuis Linux — interface en français
-
-iPhone MDM Check est un outil open source conçu pour diagnostiquer la connexion USB d’un iPhone depuis Linux et aider à comprendre les problèmes rencontrés pendant la configuration.
+Outil graphique Python pour diagnostiquer les problèmes de connexion entre un iPhone et un ordinateur Linux.
 
 ✨ Fonctionnalités
 
-* 🔌 Détection des appareils iOS connectés en USB
-* 🔍 Vérification des outils de diagnostic installés
-* 📱 Lecture des informations de base lorsqu’elles sont accessibles
-* 🛠️ Conseils de dépannage
-* 📋 Guide pour demander la libération officielle d’un appareil géré
+* 🔌 Vérification des outils USB et Apple.
+* 📱 Détection des appareils connectés.
+* ℹ️ Lecture des informations du modèle et de la version iOS.
+* 🔗 Vérification du jumelage avec l’iPhone.
+* 🛠️ Conseils de dépannage automatiques.
+* 📋 Génération et copie d’un rapport de diagnostic.
 
-💻 Installation sur Zorin OS / Ubuntu 
+💻 Compatibilité
+
+* Linux, notamment Zorin OS et Ubuntu.
+* Python 3.
+* Interface graphique Tkinter.
+* Outils libimobiledevice et usbutils.
+
+📦 Installation
+
+Sur Zorin OS ou Ubuntu, ouvre un terminal et exécute :
 
 ```sudo apt update
-sudo apt install python3-tk libimobiledevice-utils ifuse
+sudo apt install python3 python3-tk usbutils libimobiledevice-utils
 ```
 
 🚀 Lancement
 
+Dans le dossier du projet :
+
 ```python3 iphone_mdm_check.py```
 
-⚠️ À propos du MDM
+Déverrouille l’iPhone et connecte-le avec un câble USB compatible avec le transfert de données. Si l’appareil le demande, accepte l’autorisation « Faire confiance ».
 
-Cet outil ne supprime pas et ne contourne pas la gestion à distance.
+🔒 À propos du MDM
 
-Si l’écran « Gestion à distance » apparaît pendant la configuration, contacte l’organisation affichée et demande-lui de retirer l’appareil de sa gestion et, si nécessaire, de le libérer d’Apple Business Manager.
+Cet outil effectue uniquement des diagnostics locaux. Il ne supprime pas les profils MDM, ne contourne pas les restrictions de gestion et ne retire pas le verrouillage d’un appareil.
 
-🔒 Confidentialité
+Pour libérer un appareil géré par une organisation, contacte son administrateur afin qu’il effectue la procédure officielle de retrait dans son système de gestion.
 
-Les diagnostics sont effectués localement. Le programme n’est pas conçu pour envoyer les informations de l’appareil à un serveur.
+🧪 État du projet
 
-Ne publie jamais ton numéro de série ou d’autres identifiants privés.
+Version : 2.0 — USB Diagnostics
+
+Projet en développement. Les résultats dépendent de la version de Linux, des pilotes et de la configuration de l’iPhone.
 
 📄 Licence
 
-Projet distribué sous licence MIT. Voir le fichier LICENSE.
+MIT — voir le fichier LICENSE.
